@@ -6,6 +6,8 @@ public class Attacker : MonoBehaviour
 {
     [Range(0f, 5f)] float currentSpeed = 1f;
 
+    [SerializeField] float health = 10f;
+
     // Start is called before the first frame update
     void Start()
     {

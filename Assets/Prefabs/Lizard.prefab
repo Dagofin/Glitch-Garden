@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 8062960350297386395}
   - component: {fileID: 8062960350297386394}
   - component: {fileID: 8062960350297386397}
+  - component: {fileID: 3573659575242363526}
+  - component: {fileID: 5705323025485521272}
+  - component: {fileID: 4291732745860001372}
   m_Layer: 0
   m_Name: Lizard
-  m_TagString: Untagged
+  m_TagString: Attacker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,4 +115,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d8335e7b941714e82f2d5b0d44c56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 0.75
+  health: 10
+--- !u!70 &3573659575242363526
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8062960350297386393}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.55, y: -0.27}
+  m_Size: {x: 0.75, y: 0.8}
+  m_Direction: 0
+--- !u!50 &5705323025485521272
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8062960350297386393}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &4291732745860001372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8062960350297386393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764625094f52a5c459e10659d649b4b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
