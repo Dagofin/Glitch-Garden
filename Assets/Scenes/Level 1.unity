@@ -512,11 +512,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus
       objectReference: {fileID: 0}
-    - target: {fileID: 4173609374017579084, guid: 084edd0380d133946b1898939984a507,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3511516230550513898, guid: 084edd0380d133946b1898939984a507,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -641,7 +636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594922939}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.442, y: 0.05, z: 2}
+  m_LocalPosition: {x: -0.221, y: 0.05, z: 2}
   m_LocalScale: {x: 0.07797111, y: 0.92334205, z: 0.7017399}
   m_Children: []
   m_Father: {fileID: 1965083927}
@@ -899,7 +894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783879365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3332, y: 0.03, z: 2}
+  m_LocalPosition: {x: -0.11220002, y: 0.03, z: 2}
   m_LocalScale: {x: 0.08393001, y: 0.82105434, z: 0.75537}
   m_Children: []
   m_Father: {fileID: 1965083927}
@@ -1229,11 +1224,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trophy
-      objectReference: {fileID: 0}
-    - target: {fileID: 2800900041983135454, guid: fcd4fd9d48e16434f833eaa7f347b2cd,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2800900041983135440, guid: fcd4fd9d48e16434f833eaa7f347b2cd,
         type: 3}
