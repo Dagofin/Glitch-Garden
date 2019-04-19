@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efef32a3b09078149a8958b62e377e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8062960350297386397, guid: cbe558d8f52a0194cb0f56053e090af2,
     type: 3}
 --- !u!4 &684068640 stripped
@@ -235,7 +235,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &963737283
 PrefabInstance:
@@ -257,7 +257,7 @@ PrefabInstance:
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.42
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
@@ -324,8 +324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efef32a3b09078149a8958b62e377e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8062960350297386397, guid: cbe558d8f52a0194cb0f56053e090af2,
     type: 3}
 --- !u!4 &1065720986 stripped
@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.42
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
@@ -423,7 +423,7 @@ PrefabInstance:
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.42
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
@@ -490,8 +490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efef32a3b09078149a8958b62e377e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8062960350297386397, guid: cbe558d8f52a0194cb0f56053e090af2,
     type: 3}
 --- !u!4 &1274378642 stripped
@@ -518,8 +518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efef32a3b09078149a8958b62e377e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8062960350297386397, guid: cbe558d8f52a0194cb0f56053e090af2,
     type: 3}
 --- !u!4 &1472641950 stripped
@@ -699,7 +699,7 @@ PrefabInstance:
     - target: {fileID: 896714228693598704, guid: 88da5f5a157c59d47ba0b2fd5f0b9e79,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 896714228693598704, guid: 88da5f5a157c59d47ba0b2fd5f0b9e79,
         type: 3}
@@ -738,7 +738,7 @@ PrefabInstance:
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.42
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
@@ -1035,7 +1035,7 @@ Transform:
   - {fileID: 684068640}
   - {fileID: 1472641950}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &434607516245400739 stripped
 GameObject:
@@ -1055,8 +1055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efef32a3b09078149a8958b62e377e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8062960350297386397, guid: cbe558d8f52a0194cb0f56053e090af2,
     type: 3}
 --- !u!4 &434607516245400741 stripped
@@ -1251,6 +1251,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 328042005674738206, guid: b4a8fb5353ff1054db76ef336fed370e,
+        type: 3}
+      propertyPath: stars
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4a8fb5353ff1054db76ef336fed370e, type: 3}
 --- !u!1001 &7099704863521004759
@@ -1303,7 +1308,7 @@ PrefabInstance:
     - target: {fileID: 7099704863029624630, guid: 40e17644c15440b40a6aa54e15209846,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7099704863029624630, guid: 40e17644c15440b40a6aa54e15209846,
         type: 3}
@@ -1342,7 +1347,7 @@ PrefabInstance:
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4200001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6376207428310281420, guid: 4a3cb00df101e5647ac9c1f5314eee2e,
         type: 3}
