@@ -89,10 +89,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8062960350297386396}
   - component: {fileID: 8062960350297386394}
-  - component: {fileID: 8062960350297386397}
   - component: {fileID: 3573659575242363526}
   - component: {fileID: 5705323025485521272}
+  - component: {fileID: 8062960350297386397}
   - component: {fileID: 4291732745860001372}
+  - component: {fileID: 2558710423428233336}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Attacker
@@ -134,19 +135,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8062960350297386397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8062960350297386393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6d8335e7b941714e82f2d5b0d44c56b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
 --- !u!70 &3573659575242363526
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -158,9 +146,9 @@ CapsuleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.55, y: -0.27}
+  m_Offset: {x: -0.55, y: 0}
   m_Size: {x: 0.75, y: 0.8}
   m_Direction: 0
 --- !u!50 &5705323025485521272
@@ -184,6 +172,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8062960350297386397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8062960350297386393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d8335e7b941714e82f2d5b0d44c56b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
 --- !u!114 &4291732745860001372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,3 +199,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+--- !u!114 &2558710423428233336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8062960350297386393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b36f03d65d249242b0eb7745ef01ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
