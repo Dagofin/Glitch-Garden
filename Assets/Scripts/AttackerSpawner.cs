@@ -8,7 +8,8 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 5f;
 
-    [SerializeField] Attacker attackerPrefab;
+    //[SerializeField] Attacker attackerPrefab;
+    [SerializeField] Attacker[] attackerPrefabs;
 
     IEnumerator Start()
     {
@@ -22,7 +23,13 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnAttacker()
     {
-        Attacker newAttacker = Instantiate(attackerPrefab, transform.position, Quaternion.identity) as Attacker;
+        var attackerIndex = Random.Range(0, attackerPrefabs.Length);
+        Spawn(attackerPrefabs[attackerIndex]);
+    }
+
+    private void Spawn(Attacker myAttacker)
+    {
+        Attacker newAttacker = Instantiate(myAttacker, transform.position, Quaternion.identity) as Attacker;
         newAttacker.transform.parent = transform;
     }
 
