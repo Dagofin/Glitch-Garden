@@ -10,10 +10,14 @@ public class Attacker : MonoBehaviour
     [SerializeField] float health = 10f;
     GameObject currentTarget;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        FindObjectOfType<LevelController>().AddToEnemies();
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().SubtractFromEnemies();
     }
 
     // Update is called once per frame
