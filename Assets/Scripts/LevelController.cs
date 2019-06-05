@@ -10,17 +10,14 @@ public class LevelController : MonoBehaviour
 
     [SerializeField] float waitToLoad = 4f;
     [SerializeField] GameObject winLabel;
+    [SerializeField] GameObject loseLabel;
 
     private void Start()
     {
         winLabel.SetActive(false);
+        loseLabel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void LevelTimerExpired()
     {
         timerExpired = true;
@@ -61,5 +58,12 @@ public class LevelController : MonoBehaviour
 
         yield return new WaitForSeconds(waitToLoad);
         FindObjectOfType<LevelLoader>().LoadNextScene();
+    }
+
+    public void HandleLoseCondition()
+    {
+        loseLabel.SetActive(true);
+        Time.timeScale = 0;
+
     }
 }

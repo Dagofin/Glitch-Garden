@@ -30,7 +30,8 @@ public class Lives : MonoBehaviour
         if(lives <= 0)
         {
             //gameover
-            FindObjectOfType<LevelLoader>().LoadGameOver();
+            FindObjectOfType<LevelController>().HandleLoseCondition();
+            
         }
     }
 }
