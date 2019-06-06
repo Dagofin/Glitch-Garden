@@ -43,6 +43,11 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    public void LoadOptionsMenu()
+    {
+        SceneManager.LoadScene("Options Screen");
+    }
+
     public void LoadGameOver()
     {
         SceneManager.LoadScene("Lose Screen");
