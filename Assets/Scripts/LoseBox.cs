@@ -5,8 +5,9 @@ using UnityEngine;
 public class LoseBox : MonoBehaviour
 {
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D otherCollider)
     {
         FindObjectOfType<Lives>().TakeLife();
+        Destroy(otherCollider.gameObject);
     }
 }
